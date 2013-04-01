@@ -1,0 +1,23 @@
+.hero-unit {
+	text-align: center;
+}
+
+i.gravitar128 {
+	display: inline-block;
+	background: url('http://www.gravatar.com/avatar/ad871ec656178abd9714a1936cb41137?size=128') no-repeat;
+	height: 128px;
+	width: 128px;
+	margin-right: .3em;
+	line-height: 128px;
+	vertical-align: text-top;
+}
+
+i.gravitar20 {
+	display: inline-block;
+	background: url('http://www.gravatar.com/avatar/ad871ec656178abd9714a1936cb41137?size=20') no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-right: .3em;
+	line-height: 20px;
+	vertical-align: text-top;
+}

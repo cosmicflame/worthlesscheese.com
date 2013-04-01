@@ -1,0 +1,16 @@
+<div class="well">
+
+	<ul class="unstyled">
+		<% _.each(events, function(event) { %>
+			<li><%-i18n['gh-event-' + event.type]%> <%-event.repo%></li>
+		<% }) %>
+	</ul>
+
+
+	Repos: <b><%-user.get('public_repos')%></b>
+	//
+	Following: <b><%-user.get('following')%></b>
+	//
+	Followers: <b><%-user.get('followers')%></b>
+
+</div>
