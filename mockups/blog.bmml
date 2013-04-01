@@ -1,0 +1,16 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1676" measuredH="770" mockupW="1495" mockupH="768">
+  <controls>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Component" x="181" y="2" w="1495" h="768" measuredW="1495" measuredH="768" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0">
+          <text>.%3A%3A%20Brian%20Beckett%20%3A%3A%20worthlesscheese.com%20%3A%3A.%0Ahttp%3A//www.worthlesscheese.com/%23blog</text>
+        </override>
+        <override controlID="1">
+          <selectedIndex>2</selectedIndex>
+          <text>Brian%20Beckett%2CAbout%2CBlog%2CPhoto%20Gallery%2CCode%2CGuides</text>
+        </override>
+        <src>./assets/symbols.bmml#Background</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
