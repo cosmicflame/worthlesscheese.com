@@ -1,0 +1,12 @@
+<div class="well">
+
+	<p>I am <a href="<%=model.get('link')%>"><%-model.get('display_name') %></a>
+
+		 and I have a reputation of <%-model.get('reputation')%>.</p>
+
+	<p>I also have <%-model.get('badge_counts').gold %> gold badges,
+		<%-model.get('badge_counts').silver %> silver badges and
+		<%-model.get('badge_counts').bronze %> bronze badges.
+
+		My accept rate is <%-model.get('accept_rate') %>%</p>
+</div>
