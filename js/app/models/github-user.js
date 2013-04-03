@@ -1,10 +1,15 @@
 ; define([
 	'backbone'
-], function(Backbone) {
+	, 'config'
+], function(Backbone, config) {
 
 	return Backbone.Model.extend({
 
-		url: 'https://api.github.com/users/cosmicflame'
+		baseUrl: 'https://api.github.com/users/',
+
+		url: function() {
+			return this.baseUrl + config.github.userid
+		}
 
 	})
 });

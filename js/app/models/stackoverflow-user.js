@@ -1,13 +1,16 @@
 ; define([
 	'backbone'
-], function(Backbone) {
+	, 'config'
+], function(Backbone, config) {
 
 	return Backbone.Model.extend({
 
-		userId: 121416,
+		userInfoUrl: "https://api.stackexchange.com/2.1/users/{userId}?order=desc&sort=reputation&site={siteName}",
 
 		url: function() {
-			return "https://api.stackexchange.com/2.1/users/{userId}?order=desc&sort=reputation&site=stackoverflow".replace('{userId}', this.userId)
+			return this.userInfoUrl
+				.replace('{userId}', config.stackexchange.userid)
+				.replace('{siteName}', config.stackexchange.sitename)
 		},
 
 		parse: function(data) {

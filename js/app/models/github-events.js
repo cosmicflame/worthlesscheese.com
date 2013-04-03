@@ -1,17 +1,22 @@
 ; define([
 	'backbone'
 	, 'underscore'
-], function(Backbone, _) {
+	, 'config'
+], function(Backbone, _, config) {
 
 	return Backbone.Model.extend({
 
-		url: 'https://api.github.com/users/cosmicflame/events',
+		baseUrl: 'https://api.github.com/users/{userId}/events',
+
+		url: function() {
+			return this.baseUrl.replace('{userId}', config.github.userid)
+		},
 
 		parse: function(data) {
 
 			var myEvents = []
 
-			_.each(data.slice(0, 10), function(event) {
+			_.each(data.slice(0, config.github.events.numToShow), function(event) {
 				myEvents.push({
 					type: event.type,
 					repo: event.repo.name
@@ -22,7 +27,5 @@
 				ghEvents: myEvents
 			}
 		}
-
-
 	})
 });
