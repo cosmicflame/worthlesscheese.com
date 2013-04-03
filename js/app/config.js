@@ -7,7 +7,7 @@
 		, "github": {
 			"userid": "cosmicflame"
 			, "events": {
-				"numToShow": 10
+				"numToShow": 6
 			}
 		}
 		, "stackexchange": {
