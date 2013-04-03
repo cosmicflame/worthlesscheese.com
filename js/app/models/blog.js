@@ -1,9 +1,12 @@
 ; define([
 	'backbone'
-], function(Backbone) {
+	, 'config'
+], function(Backbone, config) {
 
 	return Backbone.Model.extend({
 
-		url: 'http://www.worthlesscheese.com/blog/?json=get_recent_posts'
+		url: function() {
+			return config.wordpress.blogUrl + '?json=get_recent_posts'
+		}
 	})
 });

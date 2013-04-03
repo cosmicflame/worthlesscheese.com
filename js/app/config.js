@@ -14,5 +14,8 @@
 			"userid": 121416
 			, "sitename": "stackoverflow"
 		}
+		, "wordpress": {
+			"blogUrl": "http://www.worthlesscheese.com/blog/"
+		}
 	}
 });
