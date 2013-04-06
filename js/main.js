@@ -19,7 +19,7 @@
 
 		//Create main app
 		this.app = new App({
-			el: $('.container')
+			el: $('.app')
 		}).render()
 
 		//Create router
